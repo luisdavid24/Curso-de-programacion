@@ -30,3 +30,21 @@ const apiRick= async (pagina)=>{
     })
 }
 apiRick(1);
+
+
+
+function guardarCard(event) {
+    const button = event.target;
+    const item = {
+        name: button.getAttribute('data-name'),
+        status: button.getAttribute('data-status'),
+        species: button.getAttribute('data-species'),
+        location: button.getAttribute('data-location'),
+        image: button.getAttribute('data-image')
+    };
+    console.log("Guardando item:", item);
+    let savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+    savedItems.push(item);
+    localStorage.setItem('savedItems', JSON.stringify(savedItems));
+    alert(`${item.name} ha sido guardado!`);
+}
