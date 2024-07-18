@@ -1,0 +1,79 @@
+body {
+    background-color: #e4ede2;
+    text-align: center;
+    align-content: center;
+    margin:30px;
+    
+}
+
+#Resultado,#itemsGuardados{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax( 200px,400px));
+    grid-template-rows: auto;
+    gap:40px;
+    place-items: center;
+}
+.card {
+    background-color: #0d3f3b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: background 0.5s linear;
+}
+.card:hover{
+    background-color: #3a847d;
+}
+.cardLocal{
+    background-color: #1e0d3f;
+}
+.cardLocal:hover{
+    background-color: #4b3576;
+}
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #eaf1f3;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #b3c0c4;
+    margin-top: 8px;
+}
+
+.btn {
+    background-color: #46857f;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnLocal{
+    background-color: #442286;
+}
+.btnLimpiarLocal{
+    background-color: #ce6941;
+}
+
+.btnLimpiar{
+    background-color: #41ce8c;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="RickAndMorty.css"> -->
+</head>
+<body>
+        <h2>Este es la guia para los estudiantes</h2>
+        <select name="pagina" id="pagina" onchange="apiRick(this.value)">
+            <script>
+                    for(let i=1;i<=42;i++){
+                        document.write(`<option value=${i}>${i}</option>`);
+                    }
+            </script>
+        </select>
+        <div id="Resultado">
+
+        </div>
+        <h2>Aqui van los guardados</h2>
+        <button class="btn" id="mostrarItemsBtn">Mostrar</button>
+        <button  class="btn btnLimpiarLocal" id="limpiarStorageBtn">Limpiar localstorage</button>
+        <button  class="btn btnLimpiar" id="limpiarBtn">Limpiar </button>
+        <div id="itemsGuardados">
+
+        </div>
+           
+        
+    
+    <script src="RickAndMorty.js" ></script>
+</body>
+</html>
