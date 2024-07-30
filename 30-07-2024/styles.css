@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-header {
+    background-color: #1ABC9C;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.card-body {
+    padding: 20px;
+}
+.card-body p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.card-body a {
+    color: #e27c23;
+    text-decoration: none;
+}
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+#tableBody_Users {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 2px;
+    border-radius: 10%;
+    margin-top: 100px;
+}
+.btn-1{
+    background-color:#f3d9c3 ;
+}
+
+.btn-1:hover{
+    background-color:#ba6a23;
+}
+.card-body p {
+    margin-bottom: 10px;
+}
