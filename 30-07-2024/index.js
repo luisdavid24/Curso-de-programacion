@@ -33,3 +33,11 @@ window.addEventListener("load", function () {
 });
 
 
+let numeros = [1, 2, 3, 4, 5];// Encontrar el primer número mayor que 3let mayorQueTres =numeros.find(function(numero) {    return numero > 3;});console.log(mayorQueTres); // Imprime 4
+
+let nuevo=numeros.find(function(numero) {  
+      return numero < 6;});
+console.log(nuevo); // Imprime 4
+
+
+
