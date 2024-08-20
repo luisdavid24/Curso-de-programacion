@@ -41,3 +41,5 @@ document.addEventListener('DOMContentLoaded', () => {
     mostrarResultado(ultimoResultado);
   }
 });
+
+
