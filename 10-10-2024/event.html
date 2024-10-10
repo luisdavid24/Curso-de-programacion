@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Eventos</title>
+  </head>
+  <body>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+    <p id="mensaje"></p>
+
+    <script>
+      const input = document.getElementById("nombre");
+      const mensaje = document.getElementById("mensaje");
+
+      input.addEventListener("input", (event) => {
+        mensaje.textContent = `Hola, ${event.target.value}`;
+      });
+    </script>
+  </body>
+</html>

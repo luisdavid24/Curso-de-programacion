@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Manipulación del DOM</title>
+  </head>
+  <body>
+    <h1 id="titulo">Hola Mundo</h1>
+    <p id="parrafo">Este es un párrafo de ejemplo.</p>
+    <button id="cambiarTexto">Cambiar Texto</button>
+
+    <script>
+      // Seleccionar el botón y el párrafo
+      const boton = document.getElementById("cambiarTexto");
+      const parrafo = document.getElementById("parrafo");
+
+      // Escuchar un evento de clic para cambiar el texto
+      boton.addEventListener("click", () => {
+        parrafo.textContent = "El texto ha sido cambiado";
+      });
+    </script>
+  </body>
+</html>
