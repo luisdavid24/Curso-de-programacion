@@ -17,11 +17,15 @@ storeUserData(userInfo);
 /**
 Opciones:
 
-1.Se almacena userInfo en localStorage como una cadena JSON sin espacios en los nombres de usuario.
+1.Se almacena userInfo en localStorage como una cadena JSON 
+sin espacios en los nombres de usuario.
 2.Se borra todo el localStorage porque userInfo[0].username incluye espacios.
 3.No se realiza ninguna acción ya que userInfo no es un arreglo.
 4.Se almacena solo el primer objeto de userInfo en localStorage.
  */
+
+
+
 
 //Ejercicio 2:
 /*
@@ -66,7 +70,8 @@ storeTime();
 */
 /*
 Opciones:
-1.Muestra '5 segundos han pasado' en la consola y borra localStorage después de 5 segundos.
+1.Muestra '5 segundos han pasado' en la consola y borra localStorage 
+después de 5 segundos.
 2.Muestra '5 segundos han pasado' en la consola cada segundo sin borrar localStorage.
 3.Nunca borra localStorage porque clearInterval() no se llama correctamente.
 4.No muestra nada ya que la función setInterval() no se ejecuta.
@@ -133,7 +138,8 @@ Opciones:
 function validateAndStoreDate(dates) {
   if (Array.isArray(dates) && dates.every(date => date.hasOwnProperty('eventDate'))) {
     const currentTime = new Date().getTime();
-    const validDates = dates.filter(date => new Date(date.eventDate).getTime() >= currentTime);
+    const validDates = dates
+      .filter(date => new Date(date.eventDate).getTime() >= currentTime);
     localStorage.setItem('validDates', JSON.stringify(validDates));
   } else {
     localStorage.clear();
@@ -145,7 +151,6 @@ const dates = [
   { eventDate: '2024-10-30T08:30:00' }
 ];
 validateAndStoreDate(dates);
-
 */
 
 /*
@@ -159,7 +164,8 @@ Opciones:
 //Ejercicio 7
 /*
 function transformAndStoreData(users) {
-  if (Array.isArray(users) && users.every(user => user.hasOwnProperty('age') && user.age >= 18)) {
+  if (Array.isArray(users) && 
+    users.every(user => user.hasOwnProperty('age') && user.age >= 18)) {
     const sortedAges = users.map(user => user.age).sort((a, b) => b - a).flat();
     const result = sortedAges.includes(21);
     localStorage.setItem('adults', JSON.stringify(users));
@@ -171,7 +177,6 @@ function transformAndStoreData(users) {
 
 const users = [{ age: 18 }, { age: 21 }, { age: 30 }];
 console.log(transformAndStoreData(users));
-
 */
 /**
 Opciones:
@@ -182,7 +187,7 @@ Opciones:
  */
 
 //Ejercicio 8
-/*
+
 function processUserInput(input) {
   if (typeof input === 'string') {
     const trimmedInput = input.trim();
@@ -201,14 +206,12 @@ function processUserInput(input) {
     }
   }
 }
-
 processUserInput('   example@domain.com   ');
-*/
-
-/*
-Opciones:
-1.Borra localStorage cada 2 segundos hasta que se cumple la condición y luego detiene el temporizador.
-2.Muestra Email válido almacenado en la consola y detiene el temporizador, conservando el correo en localStorage.
+/*Opciones:
+1.Borra localStorage cada 2 segundos hasta que se cumple la condición y 
+luego detiene el temporizador.
+2.Muestra Email válido almacenado en la consola y detiene el temporizador, 
+conservando el correo en localStorage.
 3.Limpia localStorage y no guarda nada porque input es una cadena con espacios.
 4.Ejecuta un temporizador indefinidamente sin mostrar mensaje en la consola
 */
